@@ -123,10 +123,10 @@ a{text-decoration:none;}
 
 /* ── TIMELINE ── */
 .timeline{display:flex;flex-direction:column;}
-.tl-row{display:grid;grid-template-columns:58px 1fr;margin-bottom:.7rem;position:relative;}
+.tl-row{display:grid;grid-template-columns:72px 1fr;margin-bottom:.7rem;position:relative;}
 .tl-lc{
   display:flex;flex-direction:column;align-items:flex-end;
-  padding-right:.5rem;padding-top:.9rem;gap:.06rem;position:relative;
+  padding-right:1.4rem;padding-top:.9rem;gap:.06rem;position:relative;
 }
 .tl-t{
   font-family:var(--f-num);font-size:13px;
@@ -137,13 +137,13 @@ a{text-decoration:none;}
   color:rgba(94,232,223,.65);text-align:right;white-space:nowrap;
 }
 .tl-line{
-  position:absolute;right:calc(.5rem + 3px);
+  position:absolute;right:0;
   top:1.3rem;bottom:-1.5rem;
   width:1px;background:rgba(255,255,255,.1);
 }
 .tl-row.last .tl-line{display:none;}
 .tl-dot{
-  position:absolute;right:.5rem;top:.9rem;
+  position:absolute;right:0;top:.9rem;
   width:9px;height:9px;border-radius:50%;
   border:2px solid var(--bl);background:var(--bg);
   transform:translateX(50%);z-index:1;
@@ -154,6 +154,7 @@ a{text-decoration:none;}
   background:var(--card);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border:1px solid var(--bd);border-radius:16px;overflow:hidden;
+  margin-left:10px;
 }
 .act-photo{width:100%;height:140px;object-fit:cover;display:block;}
 .act-body{padding:.8rem .95rem;}
@@ -181,12 +182,12 @@ a{text-decoration:none;}
 
 /* ── INSERT SLOT ── */
 .ins-slot{
-  height:0;margin:0 0 0 58px;border-radius:2px;
+  height:0;margin:0 0 0 72px;border-radius:2px;
   background:transparent;transition:height .12s,margin .12s;
   position:relative;pointer-events:none;
 }
 .ins-slot.lit{
-  height:4px;margin:4px 0 4px 58px;
+  height:4px;margin:4px 0 4px 72px;
   background:linear-gradient(90deg,var(--te),var(--bl));
   box-shadow:0 0 10px rgba(94,232,223,.55);
 }
@@ -198,7 +199,7 @@ a{text-decoration:none;}
 }
 
 /* ── DROPPED CARD ── */
-.dropped-row{display:grid;grid-template-columns:58px 1fr;margin-bottom:.7rem;position:relative;}
+.dropped-row{display:grid;grid-template-columns:72px 1fr;margin-bottom:.7rem;position:relative;}
 .dropped-row .tl-lc .tl-line{background:rgba(94,232,223,.2);}
 .dropped-row .tl-dot{border-color:var(--te);background:rgba(94,232,223,.12);}
 .dropped-card{
